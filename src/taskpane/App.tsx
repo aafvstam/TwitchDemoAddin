@@ -1,8 +1,9 @@
 import * as React from "react";
-import { Button, ButtonType } from "office-ui-fabric-react";
-import Header from "./components/Header";
-import HeroList, { HeroListItem } from "./components/HeroList";
+import { Link } from "react-router-dom";
+import { HeroListItem } from "./components/HeroList";
 import Progress from "./components/Progress";
+import Header from "./components/common/Header";
+
 /* global Button Header, HeroList, HeroListItem, Progress, Word */
 
 export interface AppProps {
@@ -93,21 +94,12 @@ export default class App extends React.Component<AppProps, AppState> {
     }
 
     return (
-      <div className="ms-welcome">
-        <Header logo="assets/twitch_80x80.png" title={this.props.title} message="Welcome" />
-        <HeroList message="Discover what Office Add-ins can do for you today!" items={this.state.listItems}>
-          <p className="ms-font-l">
-            Modify the source files, then click <b>Run</b>.
-          </p>
-          <Button
-            className="ms-welcome__action"
-            buttonType={ButtonType.hero}
-            iconProps={{ iconName: "ChevronRight" }}
-            onClick={this.click}
-          >
-            Run
-          </Button>
-        </HeroList>
+      <div className="jumbotron">
+        <Header title={this.props.title} />
+        <p>React, Flux, and React Router for ultra-responsive web apps.</p>
+        <Link to="about" className="btn btn-primary">
+          About
+        </Link>
       </div>
     );
   }

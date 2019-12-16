@@ -4,19 +4,22 @@ import { AppContainer } from "react-hot-loader";
 import { initializeIcons } from "office-ui-fabric-react/lib/Icons";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 /* global AppContainer, Component, document, Office, module, require */
 
 initializeIcons();
 
 let isOfficeInitialized = false;
 
-const title = "Twitch Demo Task Pane Add-in";
+const title = "Twitch Demo";
 
 const render = Component => {
   ReactDOM.render(
-    <AppContainer>
-      <Component title={title} isOfficeInitialized={isOfficeInitialized} />
-    </AppContainer>,
+    <BrowserRouter>
+      <AppContainer>
+        <Component title={title} isOfficeInitialized={isOfficeInitialized} />
+      </AppContainer>
+    </BrowserRouter>,
     document.getElementById("container")
   );
 };
