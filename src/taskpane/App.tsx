@@ -1,8 +1,12 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-import { HeroListItem } from "./components/HeroList";
+
 import Progress from "./components/Progress";
 import Header from "./components/common/Header";
+import HomePage from "./pages/HomePage";
+import WatermarkPage from "./pages/WatermarkPage";
+
+import { Route, Switch } from "react-router-dom";
+import { HeroListItem } from "./components/HeroList";
 
 /* global Button Header, HeroList, HeroListItem, Progress, Word */
 
@@ -94,12 +98,12 @@ export default class App extends React.Component<AppProps, AppState> {
     }
 
     return (
-      <div className="jumbotron">
-        <Header title={this.props.title} />
-        <p>React, Flux, and React Router for ultra-responsive web apps.</p>
-        <Link to="about" className="btn btn-primary">
-          About
-        </Link>
+      <div className="container-fluid">
+        <Header logo="assets/twitch_80x80.png" title={this.props.title} message="Twitch Demo Add-in" />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/" exact component={WatermarkPage} />
+        </Switch>
       </div>
     );
   }

@@ -19,8 +19,8 @@ function Header(props: HeaderProps) {
           Home
         </NavLink>
         {" | "}
-        <NavLink activeStyle={activeStyle} to="/courses">
-          Courses
+        <NavLink activeStyle={activeStyle} to="/watermark">
+          Watermark
         </NavLink>
         {" | "}
         <NavLink activeStyle={activeStyle} to="/about">
