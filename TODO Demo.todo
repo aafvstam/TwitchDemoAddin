@@ -1,0 +1,40 @@
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+
+✔ Check out TODO - How does it work ... :-) @started(19-12-19 06:56) @done(19-12-19 07:14) @lasted(18m39s)
+
+☐ Another TODO
+
+TwitchDemoAddin:
+    ☐ Some new *item* @1h3m
+    ☐ Some other _item_ @est(1 day and 20 minutes and 12 seconds)
+    ☐ And another ~item~ @est(13 seconds)
+    ☐ Some `code`
+
+    Another Project: 
+        ☐ Nested Todo
+        This is some plain text in here ... 
+        New:
+            ☐ New Item
+            ✔ Next Item @done(19-12-19 07:11)
+            ☐ Cancelled item
+            ☐ This is a @critical item
+            ☐ This is a @high item
+            ☐ This is a @low 
+            ☐ This is a @today 
+            @
+        Done:
+            ✔ Another new item @done(19-12-19 07:11)
+            
+            
+Archive:
+    ✔ Some Test @started(19-12-19 06:57) @done(19-12-19 06:57) @lasted(41s)
+    ✔ New TODO @started(19-12-19 06:58) @done(19-12-19 06:58) @lasted(27s)
+
+  
