@@ -11,3 +11,4 @@ Todo:
     ☐ Add Watermark Page
     ☐ Is Watermark an option in OfficeJS
     ☐ Remove the fix scan from CONTRIBUTING.md
+    ✔ Fix vulnerabilities (eslint) @done(20-01-07 22:51)
