@@ -2,10 +2,12 @@ import * as React from "react";
 
 import Progress from "./components/Progress";
 import Header from "./components/common/Header";
+
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import WatermarkPage from "./pages/WatermarkPage";
 
-import { Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { HeroListItem } from "./components/HeroList";
 
 /* global Button Header, HeroList, HeroListItem, Progress, Word */
@@ -100,10 +102,15 @@ export default class App extends React.Component<AppProps, AppState> {
     return (
       <div className="container-fluid">
         <Header logo="assets/twitch_80x80.png" title={this.props.title} message="Twitch Demo Add-in" />
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/" exact component={WatermarkPage} />
-        </Switch>
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/Watermark" component={WatermarkPage} />
+              <Route path="/About" component={AboutPage} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }

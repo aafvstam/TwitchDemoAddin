@@ -2,7 +2,7 @@ import * as React from "react";
 import { Button, ButtonType } from "office-ui-fabric-react";
 import Header from "./components/Header";
 import HeroList, { HeroListItem } from "./components/HeroList";
-import Progress from "./components/Progress";
+//import Progress from "./components/Progress";
 /* global Button Header, HeroList, HeroListItem, Progress, Word */
 
 export interface AppProps {
@@ -87,15 +87,16 @@ export default class App extends React.Component<AppProps, AppState> {
     const { title, isOfficeInitialized } = this.props;
 
     if (!isOfficeInitialized) {
+      /*
       return (
         <Progress
           title={title}
           logo="assets/profile300x300.png"
           message="Please sideload your addin to see app body."
         />
-      );
+        );
+       */
     }
-
     return (
       <div className="ms-welcome">
         <Header logo="assets/profile300x300.png" title={this.props.title} message="About" />

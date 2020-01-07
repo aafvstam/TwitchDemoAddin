@@ -1,5 +1,13 @@
 Main:
-    ☐ Add routing
+    ✔ Add routing @started(20-01-07 20:0) @done(20-01-07 22:39) @lasted(22s)
     
 Todo:
+    ✔ Display Home Page @started(19-12-20 06:55) @done(19-12-20 07:58) @lasted(1h3m33s)
+    ✔ Fix navigation @started(20-01-07 20:00) @done(20-01-07 22:35) @lasted(2h35m47s)
+    ☐ Cleanup Code after fixing navigation
+    ☐ Research reactstrap
+    ☐ Add Yarn
+    ☐ Style the loading page when not loading in Add-in
+    ☐ Add Watermark Page
+    ☐ Is Watermark an option in OfficeJS
     ☐ Remove the fix scan from CONTRIBUTING.md

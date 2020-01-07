@@ -9,6 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 
 initializeIcons();
 
+// Set to true if you want to run the addin in a common browser (not in an Office Host like MSWord)
 let isOfficeInitialized = false;
 
 const title = "Twitch Demo";

@@ -1,5 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import * as React from "react";
-import { NavLink } from "react-router-dom";
+import { HashRouter as Router, NavLink } from "react-router-dom";
 
 export interface HeaderProps {
   title: string;
@@ -14,19 +15,27 @@ function Header(props: HeaderProps) {
   return (
     <section className="ms-welcome__header ms-bgColor-neutralLighter ms-u-fadeIn500">
       <h1 className="ms-fontSize-su ms-fontWeight-light ms-fontColor-neutralPrimary">{title}</h1>
-      <nav>
-        <NavLink activeStyle={activeStyle} exact to="/">
-          Home
-        </NavLink>
-        {" | "}
-        <NavLink activeStyle={activeStyle} to="/watermark">
-          Watermark
-        </NavLink>
-        {" | "}
-        <NavLink activeStyle={activeStyle} to="/about">
-          About
-        </NavLink>
-      </nav>
+      <Router>
+        <nav className="navbar navbar-expand-md navbar-dark bg-transparent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <NavLink activeStyle={activeStyle} exact to="/">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink activeStyle={activeStyle} to="/Watermark">
+                Watermark
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink activeStyle={activeStyle} to="/About">
+                About
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </Router>
     </section>
   );
 }
