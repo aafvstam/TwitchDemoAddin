@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
 import * as React from "react";
 import { HashRouter as Router, NavLink } from "react-router-dom";
 
@@ -10,10 +10,12 @@ export interface HeaderProps {
 
 function Header(props: HeaderProps) {
   const title = props.title;
+  const logo = props.logo;
   const activeStyle = { color: "orange" };
 
   return (
     <section className="ms-welcome__header ms-bgColor-neutralLighter ms-u-fadeIn500">
+      <img width="90" height="90" src={logo} alt={title} title={title} />
       <h1 className="ms-fontSize-su ms-fontWeight-light ms-fontColor-neutralPrimary">{title}</h1>
       <Router>
         <nav className="navbar navbar-expand-md navbar-dark bg-transparent">

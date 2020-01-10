@@ -2,9 +2,11 @@ import * as React from "react";
 
 function WatermarkPage() {
   return (
-    <div className="jumbotron">
-      <h1>Watermark Page</h1>
-      <p>React, Flux, and React Router for ultra-responsive web apps.</p>
+    <div className="container text-center">
+      <div className="ms-fontSize-xl ms-fontWeight-semilight ms-fontColor-neutralPrimary mt-3 ms-u-slideUpIn20">
+        Watermark
+      </div>
+      <p>React, Flux, and React Router for ultra-responsive web applications.</p>
     </div>
   );
 }
