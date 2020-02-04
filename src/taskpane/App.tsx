@@ -39,7 +39,7 @@ export default class App extends React.Component<AppProps, AppState> {
 
     return (
       <div className="container-fluid">
-        <Header logo="assets/profile300x300.png" title={this.props.title} message="Twitch Demo Add-in" />
+        <Header logo="assets/profile300x300.png" title={this.props.title} message="Twitch Demo 2020" />
         <Router>
           <div>
             <Switch>
