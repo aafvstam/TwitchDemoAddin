@@ -12,7 +12,7 @@ initializeIcons();
 // Set to true if you want to run the addin in a common browser (not in an Office Host like MSWord)
 let isOfficeInitialized = true;
 
-const title = "Twitch Demo";
+const title = "Twitch Demo 2020 23:20";
 
 const render = Component => {
   ReactDOM.render(
@@ -24,7 +24,6 @@ const render = Component => {
     document.getElementById("container")
   );
 };
-
 
 /* Render application after Office initializes */
 Office.initialize = () => {
